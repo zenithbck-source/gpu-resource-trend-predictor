@@ -20,7 +20,6 @@ def generate_sequence_data(n_jobs, seq_length, seed):
 
         jobs.append(job)
     jobs = np.array(jobs)
-<<<<<<< HEAD
 
     return jobs, n_jobs
 
@@ -33,12 +32,3 @@ if __name__ == "__main__":
     jobs, n_jobs = generate_sequence_data(1000, 50, 7)
     np.save("sequence_testing_data.npy", jobs)
     print(f"All {n_jobs} testing jobs has been saved in sequence_testing_data.py.")
-=======
-    np.save("sequence_data.npy", jobs)
-    print(f"All {n_jobs} jobs has been saved in sequence_data.py.")
-    return jobs
-
-
-if __name__ == "__main__":
-    generate_sequence_data(10, 2, 42)
->>>>>>> a3dca54bc5f37b8f8d7c9ac4543dbba40976d6d7

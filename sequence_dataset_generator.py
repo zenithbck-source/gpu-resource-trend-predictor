@@ -20,7 +20,6 @@ def generate_sequence_data(n_jobs, seq_length, seed):
 
         jobs.append(job)
     jobs = np.array(jobs)
-
     return jobs, n_jobs
 
 

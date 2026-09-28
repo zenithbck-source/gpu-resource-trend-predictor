@@ -44,7 +44,7 @@ def generate_sequence_data(n_jobs, seq_length, seed):
 
 
 if __name__ == "__main__":
-    jobs, n_jobs, targets = generate_sequence_data(2000, 50, 42)
+    jobs, n_jobs, targets = generate_sequence_data(500000, 50, 42)
     np.save("sequence_data.npy", jobs)
     np.save("targets.npy", targets)
     print(f"All {n_jobs} training jobs has been saved in sequence_training_data.npy.")
